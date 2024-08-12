@@ -1,3 +1,3 @@
-# __init__.py in the root directory
+# __init__.py
 from . import models
 from . import controllers
