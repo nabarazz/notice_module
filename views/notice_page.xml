@@ -1,0 +1,24 @@
+<odoo>
+	<template id="notice_page" name="Notices">
+		<t t-call="website.layout">
+			<div class="container">
+				<h1>
+					Notices
+				</h1>
+				<t t-foreach="notices" t-as="notice">
+					<div class="notice">
+						<h2>
+							<t t-esc="notice.title" />
+						</h2>
+						<h4>
+							<t t-esc="notice.subtitle" />
+						</h4>
+						<a t-att-href="'/website/download/notice/' + str(notice.id)" class="btn btn-primary">
+							Download
+						</a>
+					</div>
+				</t>
+			</div>
+		</t>
+	</template>
+</odoo>
